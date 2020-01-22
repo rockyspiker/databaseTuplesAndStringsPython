@@ -2,7 +2,7 @@ import re
 
 with open('Strings.txt', 'r') as file:
     data = file.read()
-    regex = re.compile('[^a-zA-Z]+', )
+    regex = re.compile("[^a-zA-Z']+", )
     data = regex.sub(' ', data)
     data = data.lower()
     wordList = data.split()
